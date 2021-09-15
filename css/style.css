@@ -1,0 +1,382 @@
+body {
+	background: #0d0d17 url('../img/body.png') top center repeat;
+	color: #fff;
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 18px;
+}
+a {
+	color: #b0f045;
+}
+.center-box {
+	margin: 0 auto;
+	width: 1200px;
+	overflow: hidden;
+}
+.button {
+	font-weight: bold;
+	background: #b0f045;
+	color: #000;
+	display: inline-block;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 20px 0 15px;
+	text-decoration: none;
+	position: relative;
+	text-transform: uppercase;
+}
+.button:before {
+	content: "";
+	top: 0;
+	right: -10px;
+	background: #b0f045;
+	display: block;
+	position: absolute;
+	height: 35px;
+	width: 20px;
+	transform: skew( -20deg, 0deg);
+}
+.button:after {
+	content: "";
+	top: 0;
+	right: -5px;
+	background: #b0f045;
+	display: block;
+	position: absolute;
+	height: 35px;
+	width: 10px;
+	transform: skew( -20deg, 0deg);
+	border-left: solid 3px #000;
+	border-right: solid 3px #000;
+}
+
+header {
+	padding: 15px 0;
+	background: -moz-linear-gradient(top,  rgba(17,17,26,1) 0%, rgba(17,17,26,0) 99%);
+	background: -webkit-linear-gradient(top,  rgba(17,17,26,1) 0%,rgba(17,17,26,0) 99%);
+	background: linear-gradient(to bottom,  rgba(17,17,26,1) 0%,rgba(17,17,26,0) 99%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#11111a', endColorstr='#0011111a',GradientType=0 );
+
+}
+#logo {
+	float: left;
+}
+#logo a{
+	width: 225px;
+	height: 40px;
+	display: block;
+	background: url('../img/gorilla.svg') top left no-repeat;
+	background-size: 100% auto;
+}
+#navigation {
+	float: right;
+}
+nav ul {
+	padding-top: 10px;
+	float: right;
+}
+nav ul li {
+	float: left;
+	text-align: left;
+}
+nav ul li a {
+	display: inline-block;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding-right: 30px;
+	position: relative;
+	text-decoration: none;
+}
+nav ul li a:before {
+	content: "/";
+	position: absolute;
+	top: 0;
+	right: 12px;
+	font-weight: bold;
+	color: #b0f045;
+}
+nav ul li a:hover {
+	color: #b0f045;
+}
+nav ul li:last-of-type a{
+	padding: 0;
+}
+nav ul li:last-of-type a:before {
+	content: "";
+}
+#top {
+	background: url('../img/welcome.jpg') top center no-repeat;
+	background-size: auto;
+}
+#intro {
+	width: 45%;
+	margin: 150px 0;
+}
+#intro p, #services p, #offer p, #team p{
+	margin: 0 0 30px 0;
+}
+#services h2 {
+	margin: 55px 0 0 0;
+}
+#services {
+	box-shadow: 0 0 8px rgba(0,0,0,0.8);
+	padding: 0 0 30px 0;
+}
+.service {
+	margin-bottom: 40px;
+	position: relative;
+}
+.service:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	display: block;
+	height: 40%;
+	background: -moz-linear-gradient(top,  rgba(17,17,26,0) 0%, rgba(17,17,26,0.58) 99%);
+	background: -webkit-linear-gradient(top,  rgba(17,17,26,0) 0%,rgba(17,17,26,0.58) 99%);
+	background: linear-gradient(to bottom,  rgba(17,17,26,0) 0%,rgba(17,17,26,0.58) 99%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0011111a', endColorstr='#9411111a',GradientType=0 );
+}
+.service img {
+	width: 100%;
+}
+.service a {
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 15px;
+	left: 0;
+}
+#offer {
+	background: url('../img/offer.jpg') top center no-repeat;
+	padding: 70px 0;
+	box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.9);
+}
+#offer-text {
+	float: right;
+	width: 50%;
+}
+#offer h3 {
+	color: #b0f045;
+	margin: 0 0 15px 0;
+}
+#offer ul{
+	margin: 0 0 30px 0;
+	overflow: hidden;
+}
+#offer ul li {
+	margin-bottom: 8px;
+	line-height: 1.8;
+	position: relative;
+	padding-left: 26px;
+}
+#offer ul li:before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	display: block;
+	border-radius: 50%;
+	background: #b0f045;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -9px;
+}
+#offer ul li:after {
+	content: "";
+	width: 7px;
+	height: 10px;
+	display: block;
+	position: absolute;
+	left: 6px;
+	top: 50%;
+	margin-top: -6px;
+	border-bottom: solid 2px #000;
+	border-right: solid 2px #000;
+	transform: rotate(45deg);
+}
+#team {
+	padding: 70px 0;
+}
+.team-member {
+	background: #0e0e18;
+	margin-bottom: 40px
+}
+.team-member img {
+	width: 100%;
+}
+.team-text {
+	padding: 20px;
+}
+.team-text p {
+	margin: 0 0 15px 0;
+}
+.team-text p b{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#testimonials {
+	background: url('../img/testi-bg.jpg') top center no-repeat;
+	padding: 70px 50% 70px 40px;
+	box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.9);
+}
+#testimonials h3, footer h3 {
+	color: #b0f045;
+	margin-bottom: 10px;
+}
+footer {
+	background-color: #0e0e18;
+	padding: 70px 0;
+	box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.9);
+	font-size: 16px;
+}
+footer p:last-of-type{
+	margin: 0 0 10px 0;
+}
+#copyright {
+	padding: 15px 0;
+	background-color: #07070c;
+	color: #3e3e3f;
+	text-align: center;
+	font-size: 16px;
+}
+.social ul {
+	margin: 30px 0 0 0; 
+	overflow: hidden;
+}
+.social li {
+	float: left;
+	margin-right: 10px;
+}
+.social li a {
+	width: 40px;
+	height: 40px;
+	border: solid 2px #fff;
+	border-radius: 50%;
+	display: inline-block;
+	background-size: 20px auto;
+}
+.social li a:hover {
+	border-color: #b0f045;
+}
+.facebook a {
+	background: url('../img/facebook.svg') center center no-repeat;
+}
+.twitter a {
+	background: url('../img/twitter.svg') center center no-repeat;
+}
+.google a {
+	background: url('../img/gplus.svg') center center no-repeat;
+}
+.linkedin a {
+	background: url('../img/linkedin.svg') center center no-repeat;
+}
+.youtube a {
+	background: url('../img/youtube.svg') center center no-repeat;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width:1280px) {
+    .center-box {
+		height: 100%;
+		width: auto;
+		margin: 0 30px;
+	}
+	#top {
+		height: 100%;
+		overflow: hidden;
+	}
+	#intro {
+		margin: 100px 0;	
+	}
+}
+
+@media (max-width:1070px) {
+    header .center-box {
+        flex-wrap: wrap;
+    }
+    #navigation {
+        order: 3;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+        padding-top: 1rem ;
+        border-top: solid 1px #ccc;
+    }
+	#top {
+		background: url('../img/welcome.png') top center no-repeat;
+		background-size: auto;
+		background-position: bottom right 45%;
+		
+	}
+	#testimonials {
+		background-size: cover;
+		background-position: bottom right 35%;
+	}
+}
+@media (max-width:768px) {
+	#logo {
+		float: none;
+	}
+    #logo a {
+		margin: 0 auto;
+		display: block;
+		float: none;
+	}
+	#navigation, nav ul li, nav ul {
+
+		float: none;	
+	}
+	nav ul li a:before {
+		content: "";
+	}
+	nav ul li a {
+		padding: 10px 0;
+		border-bottom: solid 2px #b0f045;
+		width: 30%;
+		min-width: 140px;
+	}
+	nav ul li:last-of-type a {
+    	padding: 10px 0;
+	}
+	#top {
+		background-position: bottom right 40%;
+		background-size: 300% auto;
+	}
+	#intro {
+		width: 60%;
+		margin: 50px 0 400px 0;
+	}
+	#offer-text {
+		float: none;
+		width: 100%;
+		padding-left: 50px;
+	}
+	#offer {
+		background-size: cover;
+		background-color: #0e0e18;
+		background-position: bottom right 20%;
+
+		padding: 40px 0 100px 0;
+	}
+	#testimonials {
+		background-size: cover;
+		background-color: #0e0e18;	
+		background-position: bottom right;
+		padding: 400px 20px 35px 20px;
+		box-shadow: inset 0 0 8px rgb(0 0 0 / 90%);
+	}
+	footer .col-1-3 {
+		margin-bottom: 30px;
+	}
+	
+}
+@media (max-width:479px) {
+    #intro {
+		width: 100%;
+	}
+}
+
+
