@@ -106,7 +106,7 @@ nav ul li:last-of-type a:before {
 }
 #top {
 	background: url('../img/welcome.jpg') top center no-repeat;
-	background-size: auto;
+	background-size: cover;
 }
 #intro {
 	width: 45%;
@@ -388,6 +388,10 @@ footer p:last-of-type{
 @media (max-width:479px) {
     #intro {
 		width: 100%;
+	}
+	#top {
+		background-position: bottom right 30%;
+		
 	}
 }
 
